@@ -34,6 +34,7 @@ bool semaforo_callback(struct repeating_timer *t) {
 
 int main() {
     
+    stdio_init_all();  // Inicializa a comunicação serial
 
     // Inicializa os pinos dos LEDs como saída
     gpio_init(LED_VERMELHO);
